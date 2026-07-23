@@ -162,9 +162,9 @@ export const botConfig = {
   economy: {
     currency: {
       // Currency display name.
-      name: "ر.س",
+      name: "riyal",
       // Plural display name.
-      namePlural: "ر.س",
+      namePlural: "riyals",
       // Currency symbol shown in balances.
       symbol: "$",
     },
@@ -173,7 +173,7 @@ export const botConfig = {
     startingBalance: 0,
 
     // Maximum bank amount before upgrades (if upgrades are used).
-    baseBankCapacity: 99999999999999999999999999999999,
+    baseBankCapacity: 99999999999999999999,
 
     // Daily reward amount.
     dailyAmount: 1000,
