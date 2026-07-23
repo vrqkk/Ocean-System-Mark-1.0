@@ -143,7 +143,7 @@ export const botConfig = {
       // Default footer text used in bot embeds.
       text: "Ray Bot",
       // Footer icon URL (null = no icon).
-      icon: {https://i.imgur.com/pbcHa8S.jpeg,
+      icon: null,
     },
     // Default thumbnail URL for embeds (null = no thumbnail).
     thumbnail: null
