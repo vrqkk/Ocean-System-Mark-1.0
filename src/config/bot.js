@@ -11,7 +11,7 @@ export const botConfig = {
   // - "invisible" = appears offline
   presence: {
     // Current online state shown on Discord.
-    status: "idle",
+    status: "dnd",
 
     // Activity lines shown under the bot name.
     // `type` number mapping from Discord:
@@ -24,8 +24,8 @@ export const botConfig = {
     activities: [
       {
         name: "Made with love by Ray", // required by Discord API, not shown in the client
-        state: "Ocean games",     // this is what people actually see
-        type: 0,               // Custom
+        state: "Mind game",     // this is what people actually see
+        type: 3,               // Custom
       },
     ],
   },
@@ -141,12 +141,12 @@ export const botConfig = {
     },
     footer: {
       // Default footer text used in bot embeds.
-      text: "Titan Bot",
+      text: "Ray Bot",
       // Footer icon URL (null = no icon).
-      icon: null,
+      icon: https://i.imgur.com/pbcHa8S.jpeg,
     },
     // Default thumbnail URL for embeds (null = no thumbnail).
-    thumbnail: null,
+    thumbnail: https://i.imgur.com/pbcHa8S.jpeg,
     author: {
       // Optional default embed author block.
       name: null,
@@ -161,9 +161,9 @@ export const botConfig = {
   economy: {
     currency: {
       // Currency display name.
-      name: "coins",
+      name: "ر.س",
       // Plural display name.
-      namePlural: "coins",
+      namePlural: "ر.س",
       // Currency symbol shown in balances.
       symbol: "$",
     },
@@ -172,18 +172,18 @@ export const botConfig = {
     startingBalance: 0,
 
     // Maximum bank amount before upgrades (if upgrades are used).
-    baseBankCapacity: 100000,
+    baseBankCapacity: 99999999999999999999999999999999,
 
     // Daily reward amount.
-    dailyAmount: 100,
+    dailyAmount: 1000,
 
     // Work command random payout range.
-    workMin: 10,
-    workMax: 100,
+    workMin: 100,
+    workMax: 10000,
 
     // Beg command random payout range.
     begMin: 5,
-    begMax: 50,
+    begMax: 1000,
 
     // Command cooldowns (milliseconds).
     cooldowns: {
@@ -450,19 +450,19 @@ export const botConfig = {
   features: {
     // Core systems.
     economy: true,
-    leveling: true,
-    moderation: true,
-    logging: true,
-    welcome: true,
+    leveling: false,
+    moderation: false,
+    logging: false,
+    welcome: false,
 
     // Community engagement systems.
-    tickets: true,
-    giveaways: true,
-    birthday: true,
+    tickets: false,
+    giveaways: false,
+    birthday: false,
     counter: true,
 
     // Security and self-service systems.
-    verification: true,
+    verification: false,
     reactionRoles: true,
     joinToCreate: true,
 
