@@ -277,7 +277,7 @@ export const botConfig = {
   // =========================
   features: {
     economy: true,
-    leveling: false,
+    leveling: true,
     moderation: false,
     logging: false,
     welcome: false,
